@@ -62,6 +62,16 @@ services:
         image: redis:latest
         networks: 
             - laravel-9
+    
+    mailhog:
+        image: mailhog/mailhog
+        logging:
+            driver: 'none'
+        ports:
+            - "1025:1025" #smpt server
+            - "8025:8025" # web ui
+        networks:
+            - laravel-9
 
 networks: 
     laravel-9:
