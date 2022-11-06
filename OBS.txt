@@ -1,0 +1,2 @@
+##  PAREI EM: 
+02_Laravel_Horizon -> aula_03 - Configurar MailHog no Docker
